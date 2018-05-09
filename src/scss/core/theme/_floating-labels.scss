@@ -1,4 +1,5 @@
 $floating-label: calc(#{$input-height-base} * -0.4);
+
 .group {
   position: relative;
   margin-bottom: 25px;
@@ -23,6 +24,78 @@ $floating-label: calc(#{$input-height-base} * -0.4);
       &:before,
       &:after {
         background-color: $state-danger-text;
+      }
+    }
+  }
+
+  &.has-warning {
+    input {
+      border-color: $state-warning-text;
+      box-shadow: none;
+      &:focus,
+      &:valid,
+      &:-webkit-autofill,
+      &:not(:empty) {
+        ~ label {
+          color: $state-warning-text;
+        }
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .bar {
+      &:before,
+      &:after {
+        background-color: $state-warning-text;
+      }
+    }
+  }
+
+  &.has-success {
+    input {
+      border-color: $state-success-text;
+      box-shadow: none;
+      &:focus,
+      &:valid,
+      &:-webkit-autofill,
+      &:not(:empty) {
+        ~ label {
+          color: $state-success-text;
+        }
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .bar {
+      &:before,
+      &:after {
+        background-color: $state-success-text;
+      }
+    }
+  }
+
+  &.has-info {
+    input {
+      border-color: $state-info-text;
+      box-shadow: none;
+      &:focus,
+      &:valid,
+      &:-webkit-autofill,
+      &:not(:empty) {
+        ~ label {
+          color: $state-info-text;
+        }
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .bar {
+      &:before,
+      &:after {
+        background-color: $state-info-text;
       }
     }
   }
@@ -98,6 +171,7 @@ $floating-label: calc(#{$input-height-base} * -0.4);
     }
   }
 }
+
 @-webkit-keyframes autofill {
   to {
     color: #666;
