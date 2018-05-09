@@ -1,0 +1,89 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Floating Labels</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!--stylesheet-->
+    <link href="assets/css/floating-labels.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="wrapper" class="page-wrapper">
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project name</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    </header>
+    <section class="auth-wrapper content">
+        <div class="auth-card">
+            <div class="auth-card-header">Login</div>
+            <div class="auth-card-body">
+                <form method="POST" action="#">
+                    <div class="form-group group">
+                        <input id="email" type="email"
+                               class="form-control"
+                               name="email" required/>
+                        <span class="bar"></span>
+                        <label for="email">E-Mail Address</label>
+                    </div>
+                    <div class="form-group group">
+                        <input id="password" type="password"
+                               class="form-control"
+                               name="password" required/>
+                        <span class="bar"></span>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="remember"/> Remember Me
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                    <a class="btn btn-link" href="#">
+                        Forgot Your Password?
+                    </a>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>all rights reservied</p>
+    </footer>
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

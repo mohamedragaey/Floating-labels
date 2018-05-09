@@ -1,0 +1,106 @@
+$floating-label: calc(#{$input-height-base} * -0.4);
+.group {
+  position: relative;
+  margin-bottom: 25px;
+
+  &.has-error {
+    input {
+      border-color: $state-danger-text;
+      box-shadow: none;
+      &:focus,
+      &:valid,
+      &:-webkit-autofill,
+      &:not(:empty) {
+        ~ label {
+          color: $state-danger-text;
+        }
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .bar {
+      &:before,
+      &:after {
+        background-color: $state-danger-text;
+      }
+    }
+  }
+
+  input {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid $gray;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      ~ .bar {
+        &:before,
+        &:after {
+          width: 50%;
+        }
+      }
+      ~ label {
+        top: $floating-label;
+        color: $brand-primary;
+      }
+    }
+    &:valid {
+      ~ label {
+        top: $floating-label;
+        color: $brand-primary;
+      }
+    }
+    &:-webkit-autofill {
+      -webkit-animation-name: autofill;
+      -webkit-animation-fill-mode: both;
+      ~ label {
+        top: $floating-label;
+        color: $brand-primary;
+      }
+    }
+    &:not(:empty) {
+      ~ label {
+        top: $floating-label;
+        color: $brand-primary;
+      }
+    }
+  }
+
+  label {
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    #{$default}: 5px;
+    top: 10px;
+    @include transition(all $transition-time ease);
+  }
+
+  .bar {
+    position: relative;
+    display: block;
+    &:before,
+    &:after {
+      content: '';
+      height: 2px;
+      width: 0;
+      bottom: 1px;
+      position: absolute;
+      background: $brand-primary;
+      @include transition(all $transition-time ease);
+    }
+    &:before {
+      #{$default}: 50%;
+    }
+    &:after {
+      #{$opposite}: 50%;
+    }
+  }
+}
+@-webkit-keyframes autofill {
+  to {
+    color: #666;
+    background: transparent;
+  }
+}
