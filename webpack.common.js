@@ -7,7 +7,7 @@ module.exports = {
   entry: ['./src/js/script.js', './src/scss/app.scss'],
 
   plugins: [
-    new CleanWebpackPlugin(['assets']),
+    new CleanWebpackPlugin(['dist']),
     new ExtractTextPlugin({filename: 'css/floating-labels.css', disable: false, allChunks: true}),
 
     // Copy Fonts and Images From src to assets
@@ -25,8 +25,8 @@ module.exports = {
 
   output: {
     filename: 'js/main.js',
-    path: path.resolve(__dirname, 'assets'),
-    publicPath: '/assets/'
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/dist/'
   },
 
   module: {
