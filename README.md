@@ -1,6 +1,7 @@
 # Floating labels CSS (only)
 
 This Package is build over bootsrtap 3.x
+[CSS floating labels Demo](https://mohamedragaey.github.io/Floating-labels/index.html)
 
 ![default-styles](src/images/default.gif) 
 
