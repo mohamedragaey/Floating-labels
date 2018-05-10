@@ -1,6 +1,8 @@
 # Floating labels CSS (only)
 
-This Package is build over bootsrtap 3.x 
+This Package is build over bootsrtap 3.x
+
+![default-styles](src/images/default.gif) 
 
 ## Installation
 ```bash
@@ -41,7 +43,7 @@ you need to add class `has-error` along with class `group`
 ```
 ![error-styles](src/images/error-style.png)
 
-### 2. warning styles
+### 2. Warning styles
 you need to add class `has-warning` along with class `group`
 ```html
 <div class="form-group group has-warning">
@@ -52,7 +54,7 @@ you need to add class `has-warning` along with class `group`
 ```
 ![warning-styles](src/images/warning-style.png)
 
-### 3. warning styles
+### 3. Success styles
 you need to add class `has-success` along with class `group`
 ```html
 <div class="form-group group has-success">
@@ -63,7 +65,7 @@ you need to add class `has-success` along with class `group`
 ```
 ![success-styles](src/images/success-style.png)
 
-### 4. info styles
+### 4. Info styles
 you need to add class `has-info` along with class `group`
 ```html
 <div class="form-group group has-info">
