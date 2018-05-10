@@ -27,7 +27,7 @@ All You need now is:
     <label for="email">E-Mail Address</label>
 </div>
 ```
-![default-styles](images/default.png)
+![default-styles](src/images/default.png)
 
 ## Helper Classes
 ### 1. Error styles
@@ -39,7 +39,7 @@ you need to add class `has-error` along with class `group`
     <label for="email">E-Mail Address</label>
 </div>
 ```
-![error-styles](images/error-style.png)
+![error-styles](src/images/error-style.png)
 
 ### 2. warning styles
 you need to add class `has-warning` along with class `group`
@@ -50,7 +50,7 @@ you need to add class `has-warning` along with class `group`
     <label for="email">E-Mail Address</label>
 </div>
 ```
-![warning-styles](images/warning-style.png)
+![warning-styles](src/images/warning-style.png)
 
 ### 3. warning styles
 you need to add class `has-success` along with class `group`
@@ -61,7 +61,7 @@ you need to add class `has-success` along with class `group`
     <label for="email">E-Mail Address</label>
 </div>
 ```
-![success-styles](images/success-style.png)
+![success-styles](src/images/success-style.png)
 
 ### 4. info styles
 you need to add class `has-info` along with class `group`
@@ -72,4 +72,4 @@ you need to add class `has-info` along with class `group`
     <label for="email">E-Mail Address</label>
 </div>
 ```
-![info-styles](images/info-style.png)
+![info-styles](src/images/info-style.png)
